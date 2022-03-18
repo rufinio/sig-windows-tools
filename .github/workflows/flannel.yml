@@ -1,14 +1,6 @@
 name: flannel-images
 
 on: [push]
-  pull_request:
-    paths:
-      - "kubeadm/flannel/**"
-      - "kubeadm/buildx.psm1"
-      - ".github/workflows/flannel.yml"
-    branches:
-      - master
-
 jobs:
   build:
     runs-on: ubuntu-20.04
