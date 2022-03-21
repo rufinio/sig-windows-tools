@@ -22,6 +22,7 @@ foreach ($flannel in $config.flannel)
     foreach($tag in $config.tagsMap) 
     {
         $base = "$($config.baseimage):$($tag.source)"
+		$image = 'flannel'
 		$current = "$($tagSuffix)/$($image):v$($flannel)-$($tag.target)"
         $bases += $base
         $items += $current
