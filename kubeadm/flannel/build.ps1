@@ -25,7 +25,7 @@ foreach ($flannel in $config.flannel)
         $current = "$($image):v$($flannel)-$($tag.target)$($tagSuffix)"
         $bases += $base
         $items += $current
-		$current = "$($tagSuffix)/$($image):v$($flannel)"
+		$current = "$($tagSuffix)/flannel:v$($flannel)"
         New-Build -name $current -output $output -args @("BASE=$base", "flannelVersion=$flannel")
     }
 
