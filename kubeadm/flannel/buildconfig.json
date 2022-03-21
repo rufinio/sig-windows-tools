@@ -5,6 +5,7 @@
     "baseimage": "mcr.microsoft.com/powershell",
     "tagsMap":[
         {"source":"nanoserver-ltsc2022","target":"ltsc2022"},
-        {"source":"nanoserver-20h2","target":"20h2"}
+        {"source":"nanoserver-20h2","target":"20h2"},
+        {"source":"nanoserver-2004","target":"2004"}
     ]
 }
